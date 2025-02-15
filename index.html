@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clan Solanildos - MMORPG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Clan Solanildos</h1>
+            <p>Domine o mundo dos MMORPGs com estratégia e trabalho em equipe!</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>Sobre o Clan</h2>
+            <p>O Clan Solanildos é uma comunidade de elite para jogadores de MMORPG que buscam conquistas épicas, batalhas intensas e amizades duradouras. Junte-se a nós e faça parte de uma lenda!</p>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Como Funciona</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Inscrição</h3>
+                    <p>Preencha o formulário e aguarde a aprovação para entrar no clan.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Treinamento</h3>
+                    <p>Participe de treinamentos e workshops para dominar as estratégias do jogo.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Conquistas</h3>
+                    <p>Junte-se a batalhas épicas e conquiste territórios com seu time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join">
+        <div class="container">
+            <h2>Junte-se ao Clan</h2>
+            <form id="joinForm">
+                <label for="name">Nome do Personagem:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="class">Classe:</label>
+                <select id="class" name="class" required>
+                    <option value="">Selecione sua classe</option>
+                    <option value="warrior">Guerreiro</option>
+                    <option value="mage">Mago</option>
+                    <option value="archer">Arqueiro</option>
+                    <option value="healer">Curandeiro</option>
+                </select>
+
+                <label for="message">Por que quer se juntar ao clan?</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Clan Solanildos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
