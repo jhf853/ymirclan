@@ -1,14 +1,35 @@
-document.getElementById('joinForm').addEventListener('submit', function (e) {
+// Função para trocar o idioma
+function changeLanguage(lang) {
+    const elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(element => {
+        if (element.getAttribute('data-lang') === lang) {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    });
+}
+
+// Evento para trocar o idioma ao selecionar
+document.getElementById('language').addEventListener('change', function () {
+    const selectedLang = this.value;
+    changeLanguage(selectedLang);
+});
+
+// Abrir modal
+document.getElementById('openModal').addEventListener('click', function (e) {
     e.preventDefault();
+    document.getElementById('modal').style.display = 'flex';
+});
 
-    // Simulação de envio do formulário
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+// Fechar modal
+document.getElementById('closeModal').addEventListener('click', function () {
+    document.getElementById('modal').style.display = 'none';
+});
 
-    // Exibe mensagem de sucesso
-    document.getElementById('formMessage').textContent = `Obrigado, ${name}! Sua inscrição foi enviada.`;
-
-    // Limpa o formulário
-    document.getElementById('joinForm').reset();
+// Fechar modal ao clicar fora
+window.addEventListener('click', function (e) {
+    if (e.target === document.getElementById('modal')) {
+        document.getElementById('modal').style.display = 'none';
+    }
 });

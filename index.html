@@ -7,73 +7,241 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Seletor de idioma -->
+    <div class="language-selector">
+        <select id="language">
+            <option value="pt">PT-BR</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+
     <header>
         <div class="container">
-            <h1>Clan Solanildos</h1>
-            <p>Domine o mundo dos MMORPGs com estratégia e trabalho em equipe!</p>
+            <h1 data-lang="pt">Clan Solanildos</h1>
+            <h1 data-lang="en" style="display: none;">Solanildos Clan</h1>
+            <h1 data-lang="es" style="display: none;">Clan Solanildos</h1>
+            <p data-lang="pt">Domine o mundo dos MMORPGs com estratégia, trabalho em equipe e recompensas justas!</p>
+            <p data-lang="en" style="display: none;">Dominate the world of MMORPGs with strategy, teamwork, and fair rewards!</p>
+            <p data-lang="es" style="display: none;">¡Domina el mundo de los MMORPG con estrategia, trabajo en equipo y recompensas justas!</p>
         </div>
     </header>
 
-    <section class="about">
+    <section class="disclaimer">
         <div class="container">
-            <h2>Sobre o Clan</h2>
-            <p>O Clan Solanildos é uma comunidade de elite para jogadores de MMORPG que buscam conquistas épicas, batalhas intensas e amizades duradouras. Junte-se a nós e faça parte de uma lenda!</p>
+            <h2 data-lang="pt">Disclaimer</h2>
+            <h2 data-lang="en" style="display: none;">Disclaimer</h2>
+            <h2 data-lang="es" style="display: none;">Aviso Legal</h2>
+            <p data-lang="pt">
+                Este é um projeto para validar o uso de tokens como moeda de reconhecimento e troca para os jogadores ativos que atingiram as metas do clan.
+                O uso do token é de exclusividade do clan, e qualquer tipo de especulação no token não é de nossa responsabilidade.
+            </p>
+            <p data-lang="en" style="display: none;">
+                This is a project to validate the use of tokens as a recognition and exchange currency for active players who have achieved the clan's goals.
+                The use of the token is exclusive to the clan, and any speculation on the token is not our responsibility.
+            </p>
+            <p data-lang="es" style="display: none;">
+                Este es un proyecto para validar el uso de tokens como moneda de reconocimiento e intercambio para los jugadores activos que han alcanzado los objetivos del clan.
+                El uso del token es exclusivo del clan, y cualquier tipo de especulación sobre el token no es responsabilidad nuestra.
+            </p>
+        </div>
+    </section>
+
+    <!-- Nova seção de Metas -->
+    <section class="goals">
+        <div class="container">
+            <h2 data-lang="pt">Metas</h2>
+            <h2 data-lang="en" style="display: none;">Goals</h2>
+            <h2 data-lang="es" style="display: none;">Metas</h2>
+            <div class="goal-item">
+                <h3 data-lang="pt">Power: TBD</h3>
+                <h3 data-lang="en" style="display: none;">Power: TBD</h3>
+                <h3 data-lang="es" style="display: none;">Power: Por definir</h3>
+                <p data-lang="pt">A meta de power será definida em breve. Fique atento!</p>
+                <p data-lang="en" style="display: none;">The power goal will be defined soon. Stay tuned!</p>
+                <p data-lang="es" style="display: none;">La meta de power se definirá pronto. ¡Mantente atento!</p>
+            </div>
+            <div class="goal-item">
+                <h3 data-lang="pt">Doação Diária</h3>
+                <h3 data-lang="en" style="display: none;">Daily Donation</h3>
+                <h3 data-lang="es" style="display: none;">Donación Diaria</h3>
+                <p data-lang="pt">Contribua com doações diárias para fortalecer o clan e garantir recursos para todos.</p>
+                <p data-lang="en" style="display: none;">Contribute with daily donations to strengthen the clan and ensure resources for everyone.</p>
+                <p data-lang="es" style="display: none;">Contribuye con donaciones diarias para fortalecer el clan y garantizar recursos para todos.</p>
+            </div>
+            <div class="goal-item">
+                <h3 data-lang="pt">Conteúdos do Clan</h3>
+                <h3 data-lang="en" style="display: none;">Clan Content</h3>
+                <h3 data-lang="es" style="display: none;">Contenidos del Clan</h3>
+                <p data-lang="pt">Participe ativamente dos conteúdos do clan, como raids, dungeons e eventos especiais.</p>
+                <p data-lang="en" style="display: none;">Actively participate in clan content, such as raids, dungeons, and special events.</p>
+                <p data-lang="es" style="display: none;">Participa activamente en los contenidos del clan, como raids, mazmorras y eventos especiales.</p>
+            </div>
         </div>
     </section>
 
     <section class="how-it-works">
         <div class="container">
-            <h2>Como Funciona</h2>
-            <div class="steps">
-                <div class="step">
-                    <h3>1. Inscrição</h3>
-                    <p>Preencha o formulário e aguarde a aprovação para entrar no clan.</p>
-                </div>
-                <div class="step">
-                    <h3>2. Treinamento</h3>
-                    <p>Participe de treinamentos e workshops para dominar as estratégias do jogo.</p>
-                </div>
-                <div class="step">
-                    <h3>3. Conquistas</h3>
-                    <p>Junte-se a batalhas épicas e conquiste territórios com seu time.</p>
-                </div>
+            <h2 data-lang="pt">Como o Clan Funciona</h2>
+            <h2 data-lang="en" style="display: none;">How the Clan Works</h2>
+            <h2 data-lang="es" style="display: none;">Cómo Funciona el Clan</h2>
+            <p data-lang="pt">
+                De acordo com a nossa experiência durante 10 anos jogando MMORPG, vimos que uma das grandes dificuldades de um clan é manter a consistência e recompensar os jogadores que fazem a diferença.
+                Sendo assim, estamos fazendo um teste para utilizar a Web3 a nosso favor. Propomos a criação de um token para viabilizar o acesso aos recursos do clan. Informações sobre o tokenomics estão logo abaixo.
+            </p>
+            <p data-lang="en" style="display: none;">
+                Based on our 10 years of experience playing MMORPGs, we have seen that one of the biggest challenges for a clan is maintaining consistency and rewarding players who make a difference.
+                Therefore, we are testing the use of Web3 to our advantage. We propose the creation of a token to facilitate access to the clan's resources. Tokenomics information is below.
+            </p>
+            <p data-lang="es" style="display: none;">
+                Según nuestra experiencia de 10 años jugando MMORPG, hemos visto que una de las mayores dificultades de un clan es mantener la consistencia y recompensar a los jugadores que marcan la diferencia.
+                Por lo tanto, estamos probando el uso de Web3 a nuestro favor. Proponemos la creación de un token para facilitar el acceso a los recursos del clan. La información sobre tokenomics está a continuación.
+            </p>
+            <p data-lang="pt">
+                O clan terá metas semanais que serão divulgadas neste site todo domingo até as 23:59 BRT, com um comunicado no Discord.
+            </p>
+            <p data-lang="en" style="display: none;">
+                The clan will have weekly goals that will be announced on this site every Sunday by 23:59 BRT, with a notification on Discord.
+            </p>
+            <p data-lang="es" style="display: none;">
+                El clan tendrá metas semanales que se anunciarán en este sitio todos los domingos hasta las 23:59 BRT, con una notificación en Discord.
+            </p>
+        </div>
+    </section>
+
+    <section class="tokenomics">
+        <div class="container">
+            <h2 data-lang="pt">Tokenomics</h2>
+            <h2 data-lang="en" style="display: none;">Tokenomics</h2>
+            <h2 data-lang="es" style="display: none;">Tokenomics</h2>
+            <div class="token-details">
+                <p><strong data-lang="pt">Rede:</strong><strong data-lang="en" style="display: none;">Network:</strong><strong data-lang="es" style="display: none;">Red:</strong> Solana</p>
+                <p>
+                    <strong data-lang="pt">Símbolo:</strong><strong data-lang="en" style="display: none;">Symbol:</strong><strong data-lang="es" style="display: none;">Símbolo:</strong> 
+                    <a href="https://www.gofundmeme.io/campaigns/Xp6teetdqYXh7pr2MKNpkqjNnbjCo4seALvLZ18cGFM" target="_blank" class="token-link">YMIRSOL</a>
+                    <span class="presale-info" data-lang="pt">(Token em pré-venda!)</span>
+                    <span class="presale-info" data-lang="en" style="display: none;">(Token in pre-sale!)</span>
+                    <span class="presale-info" data-lang="es" style="display: none;">(¡Token en preventa!)</span>
+                </p>
+                <p><strong data-lang="pt">Distribuição do Token:</strong><strong data-lang="en" style="display: none;">Token Distribution:</strong><strong data-lang="es" style="display: none;">Distribución del Token:</strong></p>
+                <img src="token-distribution.png" alt="Distribuição do Token" class="token-image">
+                <p><strong data-lang="pt">Supply:</strong><strong data-lang="en" style="display: none;">Supply:</strong><strong data-lang="es" style="display: none;">Suministro:</strong> 1,000,000,000</p>
+                <p data-lang="pt">
+                    O token está em pré-venda! Quem adquirir o token durante a pré-venda terá todas as vantagens oferecidas pela plataforma GFM (<a href="https://www.gofundmeme.io" target="_blank">www.gofundmeme.io</a>).
+                    <a href="#" id="openModal">Clique aqui para saber mais sobre as vantagens.</a>
+                </p>
+                <p data-lang="en" style="display: none;">
+                    The token is in pre-sale! Those who acquire the token during the pre-sale will have all the benefits offered by the GFM platform (<a href="https://www.gofundmeme.io" target="_blank">www.gofundmeme.io</a>).
+                    <a href="#" id="openModal">Click here to learn more about the benefits.</a>
+                </p>
+                <p data-lang="es" style="display: none;">
+                    ¡El token está en preventa! Quienes adquieran el token durante la preventa tendrán todos los beneficios ofrecidos por la plataforma GFM (<a href="https://www.gofundmeme.io" target="_blank">www.gofundmeme.io</a>).
+                    <a href="#" id="openModal">Haz clic aquí para conocer más sobre los beneficios.</a>
+                </p>
+            </div>
+            <div class="token-functioning">
+                <h3 data-lang="pt">Funcionamento</h3>
+                <h3 data-lang="en" style="display: none;">How It Works</h3>
+                <h3 data-lang="es" style="display: none;">Funcionamiento</h3>
+                <ul data-lang="pt">
+                    <li>Todo domingo, a staff se reúne para verificar se os jogadores bateram a meta.</li>
+                    <li>Se você bateu a meta, está apto a receber 5.000 tokens.</li>
+                    <li>Se a meta não foi batida ou você não preencheu o formulário, não receberá tokens.</li>
+                    <li>Definiremos um dia para realização de leilões no Discord, no qual os jogadores que possuem tokens poderão usá-los para dar lances nos recursos disponíveis.</li>
+                    <li>O jogador que ganhar o lance terá 24 horas, a partir do final do leilão, para realizar a transação da sua carteira registrada no formulário e apresentar o hash da transação, enviando a quantidade de tokens referente ao lance para a carteira de distribuição de tokens.</li>
+                    <li>Caso o prazo de transação expire, o item será colocado em leilão novamente. (Sujeito a mudanças dependendo das regras do jogo.)</li>
+                </ul>
+                <ul data-lang="en" style="display: none;">
+                    <li>Every Sunday, the staff meets to check if the players have met the goal.</li>
+                    <li>If you have met the goal, you are eligible to receive 5,000 tokens.</li>
+                    <li>If the goal is not met or you have not filled out the form, you will not receive tokens.</li>
+                    <li>We will set a day for auctions on Discord, where players who have tokens can use them to bid on available resources.</li>
+                    <li>The player who wins the bid will have 24 hours, from the end of the auction, to complete the transaction from their registered wallet and provide the transaction hash, sending the amount of tokens corresponding to the bid to the token distribution wallet.</li>
+                    <li>If the transaction deadline expires, the item will be put up for auction again. (Subject to change depending on game rules.)</li>
+                </ul>
+                <ul data-lang="es" style="display: none;">
+                    <li>Cada domingo, el equipo se reúne para verificar si los jugadores han alcanzado la meta.</li>
+                    <li>Si has alcanzado la meta, eres elegible para recibir 5,000 tokens.</li>
+                    <li>Si la meta no se alcanza o no has completado el formulario, no recibirás tokens.</li>
+                    <li>Estableceremos un día para subastas en Discord, donde los jugadores que tengan tokens podrán usarlos para pujar por los recursos disponibles.</li>
+                    <li>El jugador que gane la puja tendrá 24 horas, a partir del final de la subasta, para completar la transacción desde su billetera registrada y proporcionar el hash de la transacción, enviando la cantidad de tokens correspondiente a la puja a la billetera de distribución de tokens.</li>
+                    <li>Si el plazo de la transacción expira, el artículo se volverá a subastar. (Sujeto a cambios según las reglas del juego).</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="join">
+    <section class="staff">
         <div class="container">
-            <h2>Junte-se ao Clan</h2>
-            <form id="joinForm">
-                <label for="name">Nome do Personagem:</label>
-                <input type="text" id="name" name="name" required>
+            <h2 data-lang="pt">Staff</h2>
+            <h2 data-lang="en" style="display: none;">Staff</h2>
+            <h2 data-lang="es" style="display: none;">Equipo</h2>
+            <p data-lang="pt">Nossa equipe é composta por:</p>
+            <p data-lang="en" style="display: none;">Our team consists of:</p>
+            <p data-lang="es" style="display: none;">Nuestro equipo está compuesto por:</p>
+            <ul>
+                <li><strong>jhf_1</strong></li>
+                <li><strong>jhf_2</strong></li>
+            </ul>
+        </div>
+    </section>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="class">Classe:</label>
-                <select id="class" name="class" required>
-                    <option value="">Selecione sua classe</option>
-                    <option value="warrior">Guerreiro</option>
-                    <option value="mage">Mago</option>
-                    <option value="archer">Arqueiro</option>
-                    <option value="healer">Curandeiro</option>
-                </select>
-
-                <label for="message">Por que quer se juntar ao clan?</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-            <p id="formMessage"></p>
+    <section class="discord">
+        <div class="container">
+            <h2 data-lang="pt">Junte-se ao Nosso Discord</h2>
+            <h2 data-lang="en" style="display: none;">Join Our Discord</h2>
+            <h2 data-lang="es" style="display: none;">Únete a Nuestro Discord</h2>
+            <p data-lang="pt">Participe da nossa comunidade e fique por dentro de todas as novidades:</p>
+            <p data-lang="en" style="display: none;">Join our community and stay updated on all the news:</p>
+            <p data-lang="es" style="display: none;">Únete a nuestra comunidad y mantente al tanto de todas las novedades:</p>
+            <a href="https://discord.gg/WsQQmQUk" target="_blank" class="discord-link" data-lang="pt">Entrar no Discord</a>
+            <a href="https://discord.gg/WsQQmQUk" target="_blank" class="discord-link" data-lang="en" style="display: none;">Join Discord</a>
+            <a href="https://discord.gg/WsQQmQUk" target="_blank" class="discord-link" data-lang="es" style="display: none;">Unirse a Discord</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Clan Solanildos. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Clan Solanildos. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 data-lang="pt">Vantagens da Pré-venda</h2>
+            <h2 data-lang="en" style="display: none;">Pre-sale Benefits</h2>
+            <h2 data-lang="es" style="display: none;">Beneficios de la Preventa</h2>
+            <p data-lang="pt">Ao adquirir o token YMIRSOL durante a pré-venda, você terá acesso a:</p>
+            <p data-lang="en" style="display: none;">By acquiring the YMIRSOL token during the pre-sale, you will have access to:</p>
+            <p data-lang="es" style="display: none;">Al adquirir el token YMIRSOL durante la preventa, tendrás acceso a:</p>
+            <ul data-lang="pt">
+                <li><strong>Descontos exclusivos:</strong> Compre tokens a um preço especial antes do lançamento oficial.</li>
+                <li><strong>Bônus de tokens:</strong> Ganhe tokens adicionais como recompensa por participar da pré-venda.</li>
+                <li><strong>Acesso antecipado:</strong> Seja um dos primeiros a utilizar os recursos do clan com os tokens adquiridos.</li>
+                <li><strong>Suporte prioritário:</strong> Receba suporte direto da equipe para dúvidas e transações.</li>
+            </ul>
+            <ul data-lang="en" style="display: none;">
+                <li><strong>Exclusive discounts:</strong> Purchase tokens at a special price before the official launch.</li>
+                <li><strong>Token bonuses:</strong> Earn additional tokens as a reward for participating in the pre-sale.</li>
+                <li><strong>Early access:</strong> Be one of the first to use the clan's resources with the acquired tokens.</li>
+                <li><strong>Priority support:</strong> Receive direct support from the team for questions and transactions.</li>
+            </ul>
+            <ul data-lang="es" style="display: none;">
+                <li><strong>Descuentos exclusivos:</strong> Compra tokens a un precio especial antes del lanzamiento oficial.</li>
+                <li><strong>Bonificaciones de tokens:</strong> Gana tokens adicionales como recompensa por participar en la preventa.</li>
+                <li><strong>Acceso anticipado:</strong> Sé uno de los primeros en utilizar los recursos del clan con los tokens adquiridos.</li>
+                <li><strong>Soporte prioritario:</strong> Recibe soporte directo del equipo para dudas y transacciones.</li>
+            </ul>
+            <p data-lang="pt">Não perca essa oportunidade! Adquira já seus tokens na pré-venda:</p>
+            <p data-lang="en" style="display: none;">Don't miss this opportunity! Get your tokens now in the pre-sale:</p>
+            <p data-lang="es" style="display: none;">¡No pierdas esta oportunidad! Obtén tus tokens ahora en la preventa:</p>
+            <a href="https://www.gofundmeme.io/campaigns/Xp6teetdqYXh7pr2MKNpkqjNnbjCo4seALvLZ18cGFM" target="_blank" class="discord-link" data-lang="pt">Participar da Pré-venda</a>
+            <a href="https://www.gofundmeme.io/campaigns/Xp6teetdqYXh7pr2MKNpkqjNnbjCo4seALvLZ18cGFM" target="_blank" class="discord-link" data-lang="en" style="display: none;">Join the Pre-sale</a>
+            <a href="https://www.gofundmeme.io/campaigns/Xp6teetdqYXh7pr2MKNpkqjNnbjCo4seALvLZ18cGFM" target="_blank" class="discord-link" data-lang="es" style="display: none;">Participar en la Preventa</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
